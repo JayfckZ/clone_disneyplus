@@ -4,6 +4,11 @@
     padding: 2vw 5.6vw;
     min-height: 50vw;
     &__tabs{
+        @media (max-width: 768px){
+            white-space: nowrap;
+            overflow-x: scroll;
+            padding-left: 20px;
+        }
         display: flex;
         justify-content: center;
         &__buttons{
@@ -21,6 +26,10 @@
                 border-bottom: 5px solid variaveis.$corTextoSecundario;
                 cursor: default;
             }
+
+            @media (max-width: 768px){
+                font-size: 16px;
+            }
         }
     }
     
@@ -29,6 +38,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
         margin-top: 44px;
+
+        @media (max-width: 768px){
+            grid-template-columns: 1fr 1fr;
+        }
 
         &--is-active{
             display: grid;

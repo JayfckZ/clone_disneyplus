@@ -1,13 +1,21 @@
 .plans{
     padding: 5.6vw;
     
+    button{
+        margin: 2vw 0 8px;
+        margin-top: 24px;
+    }
+    
     h2{
         text-align: center;
     }
     &__list{
         display: flex;
         justify-content: space-around;
-        list-style: none;
+
+        @media (max-width: 768px){
+            display: block;
+        }
         
         &__item{
             text-align: center;
